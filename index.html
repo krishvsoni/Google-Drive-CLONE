@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-size: 13px;
+    }
+    .card,
+    .card-panel {
+      padding: 15px 20px;
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    }
+    .container-fluid {
+      padding: 1rem 2.5rem;
+      margin: auto;
+    }
+    .row {
+      margin: 0 -0.75rem;
+    }
+    .main {
+      position: absolute;
+      width: calc(100% - 250px);
+      top: 125px;
+      margin-left: 250px;
+    }
+    .subheader {
+      color: rgba(0, 0, 0, 0.54);
+      font-weight: 500;
+    }
+    /* nav */
+    nav {
+      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    }
+    nav ul li {
+      text-align: center;
+    }
+    nav ul.right {
+      padding-right: 12px;
+    }
+    nav ul.right li {
+      max-width: 48px;
+    }
+    nav ul a {
+      padding: 0 12px;
+    }
+    nav ul a img {
+      height: 32px;
+      width: 32px;
+      vertical-align: middle;
+      margin-left: -5px;
+    }
+    .nav-wrapper {
+      padding-left: 12px;
+    }
+    .nav-wrapper ul a:hover {
+      background-color: transparent;
+    }
+    .nav-wrapper .title {
+      font-size: 1.4rem;
+    }
+    .nav-wrapper .btn-flat {
+      background-color: #4285f4 !important;
+      font-size: 13px;
+      font-weight: 500;
+      height: 30px;
+      line-height: 30px;
+      width: 94px;
+    }
+    .nav-2,
+    .nav-2 i {
+      height: 56px !important;
+      line-height: 56px !important;
+      min-height: 56px !important;
+    }
+    .search-wrapper {
+      margin: 10px auto 0 170px;
+      width: calc(100% - 450px);
+      max-width: 650px;
+      height: 46px;
+      position: fixed;
+    }
+    .search-wrapper i {
+      color: #757575;
+      position: absolute;
+      font-size: 24px;
+      top: 5px;
+      left: 24px;
+      line-height: 38px !important;
+    }
+    input[type="search"]:not(.browser-default) {
+      display: block;
+      padding: 11px 8px 11px 72px;
+      width: 100%;
+      background: #f5f5f5;
+      height: 24px;
+      border: none;
+      font-size: 16px;
+      outline: none;
+      border-radius: 2px;
+      color: #757575;
+    }
+    input[type="search"]:focus {
+      border-bottom: none !important;
+      box-shadow: none !important;
+    }
+    input[type="search"]::placeholder {
+      color: #757575;
+    }
+    /* sidenav */
+    .side-nav.floating {
+      width: 250px;
+      padding: 12px 8px 0 !important;
+      height: calc(100% - 130px);
+      left: initial;
+      right: initial;
+      top: 125px;
+      transform: initial;
+      z-index: auto;
+      margin: 0.5rem 0 1rem 0;
+      border-radius: 2px;
+      background: transparent;
+      box-shadow: none;
+    }
+    .side-nav .divider {
+      margin: 8px 0;
+    }
+    .side-nav .active {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+    .side-nav .active a {
+      color: #212121;
+      font-weight: 500;
+    }
+    .side-nav .subheader {
+      line-height: 24px;
+      height: 32px;
+      margin: 0;
+      padding: 4px 16px;
+      color: #616161;
+      font-weight: normal;
+      font-size: 13px;
+    }
+    .side-nav li a,
+    .side-nav li a i.material-icons {
+      height: 40px;
+      line-height: 40px;
+    }
+    .side-nav li a i.material-icons {
+      margin-right: 24px;
+    }
+    .side-nav li a {
+      padding: 0 16px;
+      font-weight: normal;
+      font-size: 13px;
+      color: #616161;
+    }
+    .side-nav li a:hover {
+      border-radius: 2px;
+    }
+    /* folders */
+    .folder {
+      width: 185px;
+      display: inline-block;
+      margin: 15px 20px 15px 0;
+      font-weight: 500;
+    }
+    .folder i {
+      color: rgba(0, 0, 0, 0.54);
+      margin-top: -3px;
+    }
+  </style>
+  <body>
+    <div class="navbar-fixed">
+      <nav class="nav-extended white">
+        <div class="nav-wrapper white">
+          <ul>
+            <li>
+              <a href="#!" class="title grey-text text-darken-1"
+                >Google Drive</a
+              >
+            </li>
+          </ul>
+          <div class="search-wrapper">
+            <i class="material-icons">search</i>
+            <input type="search" name="Search" placeholder="Search Drive" />
+          </div>
+          <ul class="right">
+            <li>
+              <a href="#!"
+                ><i class="material-icons grey-text text-darken-1">apps</i></a
+              >
+            </li>
+            <li>
+              <a href="#!"
+                ><i class="material-icons grey-text text-darken-1"
+                  >notifications</i
+                ></a
+              >
+            </li>
+            <li>
+              <a href="#!"
+                ><img
+                  src="data:image/jpeg;base64,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"
+                  class="circle"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-wrapper nav-2">
+          <ul>
+            <li>
+              <a class="waves-effect waves-light btn btn-flat white-text"
+                >New</a
+              >
+            </li>
+          </ul>
+          <ul class="right">
+            <li>
+              <a href="#!"
+                ><i class="material-icons grey-text text-darken-1"
+                  >view_list</i
+                ></a
+              >
+            </li>
+            <li>
+              <a href="#!"
+                ><i class="material-icons grey-text text-darken-1">info</i></a
+              >
+            </li>
+            <li>
+              <a href="#!"
+                ><i class="material-icons grey-text text-darken-1"
+                  >settings</i
+                ></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <ul class="side-nav fixed floating transparent z-depth-0">
+      <li class="active">
+        <a href="#"
+          ><i class="material-icons blue-text text-darken-1">dashboard</i>My
+          Drive</a
+        >
+      </li>
+      <li>
+        <a href="#"><i class="material-icons">devices</i>Computers</a>
+      </li>
+      <li>
+        <a href="#"><i class="material-icons">people</i>Shared with me</a>
+      </li>
+      <li>
+        <a href="#"><i class="material-icons">access_time</i>Recent</a>
+      </li>
+      <li>
+        <a href="#"><i class="material-icons">camera</i>Google Photos</a>
+      </li>
+      <li>
+        <a href="#"><i class="material-icons">star</i>Starred</a>
+      </li>
+      <li>
+        <a href="#"><i class="material-icons">delete</i>Trash</a>
+      </li>
+      <li><div class="divider"></div></li>
+      <li>
+        <a href="#"><i class="material-icons">cloud</i>Backups</a>
+      </li>
+      <li><div class="divider"></div></li>
+      <li>
+        <a href="#"><i class="material-icons">storage</i>Upgrade storage</a>
+      </li>
+    </ul>
+
+    <div class="main">
+      <div class="container-fluid">
+        <p class="subheader">Folders</p>
+        <div class="card-panel folder">
+          <i class="material-icons left">folder</i> Folder
+        </div>
+        <div class="card-panel folder">
+          <i class="material-icons left">folder</i> Folder
+        </div>
+      </div>
+    </div>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+</html>
