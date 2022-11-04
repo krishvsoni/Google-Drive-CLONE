@@ -12,6 +12,9 @@
 
 **Skin:** Material CSS
 
+## View Deployment On Browser
+**Click HERE 👉** ## https://onj4kb.csb.app/
+
 
 ## 🔗 Connect Me
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/krish-soni-237814247/)
@@ -22,6 +25,4 @@
 
 - [@KRISH SONI](https://www.github.com/krishvsoni)
 
-## VIEW DEPLOYMENT LIVE
-https://onj4kb.csb.app/
 
