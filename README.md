@@ -22,5 +22,6 @@
 
 - [@KRISH SONI](https://www.github.com/krishvsoni)
 
-## VIEW DEPLOYMENT 
-[![GoogleDriveClone](https://onj4kb.csb.app/)
+## VIEW DEPLOYMENT LIVE
+https://onj4kb.csb.app/
+
